@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Обучающая программа‑квест: Преступление и правонарушение</title>
+<!-- Favicon (весы правосудия), офлайн -->
+<link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'&gt;&lt;path fill='%230b3b62' d='M32 6c1.1 0 2 .9 2 2v6h10c1.1 0 2 .9 2 2 0 .4-.1.8-.4 1.1L38 29.6V46h8c1.1 0 2 .9 2 2v8H16v-8c0-1.1.9-2 2-2h8V29.6L18.4 17.1c-.3-.3-.4-.7-.4-1.1 0-1.1.9-2 2-2h10V8c0-1.1.9-2 2-2z'/&gt;&lt;path fill='%2316a085' d='M22 22 14 36h16L22 22zm20 0-8 14h16L42 22z'/&gt;&lt;/svg&gt;" rel="icon"/>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+<header class="app-header">
+<div aria-label="Название программы" class="brand">
+<span aria-hidden="true" class="brand-mark">⚖️</span>
+<div class="brand-text">
+<div class="brand-title">Программа‑квест</div>
+<div class="brand-subtitle">«<span id="uiTheme">Преступление и правонарушение</span>»</div>
+</div>
+</div>
+<nav aria-label="Главное меню" class="nav">
+<button class="nav-btn is-active" data-nav="home" type="button">Титульная</button>
+<button class="nav-btn" data-nav="theory" type="button">Теория</button>
+<button class="nav-btn" data-nav="quest" type="button">Квест</button>
+<button class="nav-btn" data-nav="instructions" type="button">Инструкция</button>
+<button class="nav-btn" data-nav="sources" type="button">Источники</button>
+</nav>
+</header>
+<main class="app-main" id="main">
+<!-- Титульная страница -->
+<section aria-labelledby="homeTitle" class="section is-active" id="home">
+<div class="card hero">
+<div class="cover-wrap">
+<div aria-label="Титульная страница" class="cover-sheet">
+<div class="cover-top">
+<div class="cover-line">Министерство науки и высшего образования Российской Федерации</div>
+<div class="cover-line"><strong>ФГБОУ ВО «Поволжский государственный университет телекоммуникаций и информатики»</strong></div>
+<div class="cover-line">Кафедра <span class="" id="coverDept">связей с общественностью</span></div>
+</div>
+<div class="cover-center">
+<div class="cover-kind">ОБУЧАЮЩАЯ ПРОГРАММА‑КВЕСТ</div>
+<div class="cover-title">
+            «<span class="" id="coverTheme">Преступление и правонарушение</span>»
+          </div>
+<div class="cover-subtitle">
+            по дисциплине «<span class="" id="coverDiscipline">Правоведение</span>»
+          </div>
+</div>
+<div class="cover-meta">
+<div class="cover-meta-col">
+<div><strong>Выполнили:</strong></div>
+<div><span class="" id="coverAuthor1">Коняшкин Никита</span>, <span class="" id="coverAuthor2">Тишков Илья</span></div>
+<div>группа <span class="" id="coverGroup">ПрИ‑31</span></div>
+</div>
+<div class="cover-meta-col">
+<div><strong>Руководитель:</strong></div>
+<div><span class="" id="coverSupervisor">Шеремеев Евгений Евгеньевич</span></div>
+<div >Должность: <span class="" id="coverSupervisorRole">Доцент кафедры связей с общественностью</span></div>
+</div>
+</div>
+<div class="cover-bottom">
+<span class="" id="coverCity">Самара</span> — <span class="" id="coverYear">2026</span>
+</div>
+</div>
+<div class="hero-side">
+<h1 id="homeTitle">Программа‑квест</h1>
+<p class="lead">
+          Тема: <strong id="uiTopicLine">преступление, правонарушение и юридическая ответственность</strong>.
+          Программа сочетает теоретический материал и квест‑вопросы для самопроверки.
+        </p>
+<div aria-label="Ключевые параметры программы" class="badge">
+<div class="badge-row"><span class="badge-k">Разделы</span><span class="badge-v">Теория · Квест · Инструкция · Источники</span></div>
+<div class="badge-row"><span class="badge-k">Вопросов</span><span class="badge-v"><span id="totalQuestionsHome">—</span></span></div>
+<div class="badge-row"><span class="badge-k">Режим</span><span class="badge-v">самопроверка</span></div>
+</div>
+<div class="hero-actions">
+<button class="btn btn-primary" id="goTheoryBtn" type="button">Открыть теорию</button>
+<button class="btn btn-ghost" id="goQuestBtn" type="button">Перейти к квесту</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Теория -->
+<section aria-labelledby="theoryTitle" class="section" id="theory">
+<div class="card">
+<h2 id="theoryTitle">Теория по теме</h2>
+<p class="muted">Материал изложен в учебном стиле (пересказ по учебной литературе Малько) и служит основой для прохождения квеста.</p>
+<div class="prose">
+<h3 class="h3">Правонарушение как юридический факт</h3>
+<p>
+<strong>Правонарушением</strong> в правоведении называют виновное и противоправное поведение (действие либо бездействие),
+        причиняющее вред охраняемым законом общественным отношениям и влекущее юридическую ответственность.
+        Противоправность означает несоответствие требованиям нормы права, а виновность — психическое отношение лица к совершенному:
+        умысел или неосторожность. Вред может выражаться как в материальных потерях, так и в нарушении порядка управления,
+        посягательстве на права личности и других негативных последствиях.
+      </p>
+<h3 class="h3">Состав правонарушения</h3>
+<p>
+        Для юридической оценки деяния используется категория <strong>состава правонарушения</strong>.
+        Обычно выделяют: <strong>объект</strong> (какие общественные отношения нарушены),
+        <strong>объективную сторону</strong> (внешнее проявление: деяние, последствия, причинная связь, место, время, способ),
+        <strong>субъект</strong> (лицо, способное нести ответственность) и <strong>субъективную сторону</strong> (вина, мотив, цель).
+        Отсутствие хотя бы одного элемента означает, что ответственность за данное правонарушение не наступает.
+      </p>
+<h3 class="h3">Преступление и проступки: ключевые различия</h3>
+<p>
+        Среди правонарушений особое место занимает <strong>преступление</strong> — наиболее опасный вид противоправных деяний,
+        запрещённых уголовным законом. Для преступлений характерна повышенная <strong>общественная опасность</strong>,
+        а уголовное наказание назначается в установленном порядке (как правило, судом).
+        <strong>Проступки</strong> (административные, дисциплинарные и др.) обычно имеют меньшую степень общественной опасности и
+        влекут иные виды ответственности — административную, дисциплинарную, гражданско‑правовую.
+      </p>
+<h3 class="h3">Виды юридической ответственности</h3>
+<p>
+        Юридическая ответственность выступает реакцией государства и общества на нарушение права и выражается в применении к
+        правонарушителю мер государственного принуждения. На практике различают <strong>уголовную</strong>,
+        <strong>административную</strong>, <strong>гражданско‑правовую</strong> и <strong>дисциплинарную</strong> ответственность.
+        Их назначение — восстановление нарушенного порядка, компенсация причинённого вреда, предупреждение новых правонарушений
+        и воспитательное воздействие.
+      </p>
+<p class="muted">
+        Совет: прежде чем переходить к квесту, перечитайте определения «противоправность», «вина», «общественная опасность» и
+        вспомните элементы состава правонарушения — именно на них опираются большинство вопросов.
+      </p>
+</div>
+</div>
+</section>
+<!-- Квест -->
+<section aria-labelledby="questTitle" class="section" id="quest">
+<div class="card">
+<div class="quest-head">
+<div>
+<h2 id="questTitle">Квест‑вопросы</h2>
+<p class="muted">Выберите все правильные варианты и нажмите «Ответить».</p>
+</div>
+<div aria-label="Статус прохождения" class="quest-meta">
+<div class="meta-item"><span class="meta-k">Вопрос</span><span class="meta-v"><span id="qIndex">—</span>/<span id="qTotal">—</span></span></div>
+<div class="meta-item"><span class="meta-k">Верно</span><span class="meta-v"><span id="qScore">0</span></span></div>
+</div>
+</div>
+<div aria-label="Прогресс" class="progress">
+<div class="progress-bar" id="progressBar" style="width:0%"></div>
+</div>
+<div aria-live="polite" class="quiz-area" id="quizArea">
+<!-- JS inject -->
+</div>
+<div aria-live="polite" class="feedback" id="feedback" role="status"></div>
+<div class="actions-row">
+<button class="btn btn-ghost" disabled="" id="prevBtn" type="button">Назад</button>
+<button class="btn btn-primary" id="answerBtn" type="button">Ответить</button>
+<button class="btn btn-ghost" disabled="" id="nextBtn" type="button">Далее</button>
+<button class="btn btn-danger" id="finishBtn" type="button">Завершить</button>
+</div>
+<div class="results" hidden="" id="results">
+<!-- JS inject -->
+</div>
+</div>
+</section>
+<!-- Инструкция -->
+<section aria-labelledby="instTitle" class="section" id="instructions">
+<div class="card">
+<h2 id="instTitle">Инструкция по прохождению квеста</h2>
+<div class="prose">
+<h3 class="h3">Как проходить</h3>
+<ol class="list">
+<li>Откройте раздел <strong>«Теория»</strong> и прочитайте материал — он нужен для ответов.</li>
+<li>Перейдите в раздел <strong>«Квест»</strong>. Каждый вопрос может иметь <strong>1 или несколько</strong> верных вариантов.</li>
+<li>Отметьте галочками <strong>все</strong> варианты, которые считаете правильными, затем нажмите <strong>«Ответить»</strong>.</li>
+<li>После проверки прочитайте пояснение: оно помогает закрепить материал и понять ошибку.</li>
+<li>Кнопка <strong>«Далее»</strong> становится доступной после ответа. Можно вернуться кнопкой <strong>«Назад»</strong>.</li>
+<li>В конце нажмите <strong>«Завершить»</strong>, чтобы увидеть итог и список вопросов, где были ошибки.</li>
+</ol>
+<h3 class="h3">Как считается результат</h3>
+<ul class="list">
+<li>Ответ засчитывается как правильный, если выбраны <strong>все</strong> верные варианты и <strong>не выбрано</strong> ни одного лишнего.</li>
+<li>В «Итогах» можно перейти к любому вопросу из списка ошибок и исправить ответы.</li>
+</ul>
+<p class="muted">Подсказка: если сомневаетесь, сначала уточните в теории признаки преступления и правонарушения и виды ответственности.</p>
+</div>
+</div>
+</section>
+<!-- Источники -->
+<section aria-labelledby="sourcesTitle" class="section" id="sources">
+<div class="card">
+<h2 id="sourcesTitle">Список источников</h2>
+<p class="muted">Для подготовки теоретического материала и вопросов использованы следующие источники.</p>
+<div class="mini-card">
+<ol class="refs">
+<li>Конституция Российской Федерации (действующая редакция).</li>
+<li>Уголовный кодекс Российской Федерации (УК РФ).</li>
+<li>Кодекс Российской Федерации об административных правонарушениях (КоАП РФ).</li>
+<li>Трудовой кодекс Российской Федерации (в части дисциплинарной ответственности).</li>
+<li><strong>Малько А.В., Субочев В.В.</strong> Правоведение: учебник. — М.: Норма : ИНФРА‑М, 2018.</li>
+</ol>
+</div>
+<div class="note">
+<p class="muted">
+        В квесте используются обобщённые формулировки и учебные примеры; при подготовке к экзамену ориентируйтесь на актуальные редакции законов и программу дисциплины.
+      </p>
+</div>
+</div>
+</section>
+</main>
+<footer class="app-footer">
+<div class="footer-inner">
+<div>© <span id="year"></span> · Программа‑квест «Преступление и правонарушение»</div>
+<div class="muted">Авторы: Коняшкин Никита, Тишков Илья · ПрИ‑31</div>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
